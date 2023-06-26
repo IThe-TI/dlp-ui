@@ -128,7 +128,7 @@ def audio_display():
         selection_display()
     else:
         ydl_opts = {
-            'outtmpl': audio_directory + '%(title)s.%(ext)s',
+            'outtmpl': audio_directory + '/' + '%(title)s.%(ext)s',
             'format': 'm4a/bestaudio/best',
             'postprocessors': [{
                 'key': 'FFmpegExtractAudio',
@@ -164,7 +164,7 @@ def video_display():
         selection_display()
     else:
         ydl_opts = {
-            'outtmpl': video_directory + '%(title)s.%(ext)s',
+            'outtmpl': video_directory + '/' + '%(title)s.%(ext)s',
             'format': 'mp4/bestaudio/best',
         }
 
