@@ -123,7 +123,7 @@ def audio_display():
     ''')
 
     url.strip()
-    if url.isspace():
+    if url.isspace() or not url:
         clear_screen()
         selection_display()
     else:
@@ -159,7 +159,7 @@ def video_display():
     ''')
 
     url.strip()
-    if url.isspace():
+    if url.isspace() or not url:
         clear_screen()
         selection_display()
     else:
